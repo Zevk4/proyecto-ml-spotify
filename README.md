@@ -4,8 +4,6 @@
 proyecto-ml-spotify/
 │
 ├── README.md                           # Informe técnico ejecutivo en Markdown (documento central)
-├── requirements.txt                    # Dependencias congeladas (pandas, scikit-learn, joblib, etc.)
-├── .gitignore                          # Exclusión de checkpoints de Jupyter, entornos virtuales, etc.
 │
 ├── data/                               # Gestión de conjuntos de datos
 │   ├── raw/
