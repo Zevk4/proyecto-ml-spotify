@@ -1,19 +1,23 @@
+## Estructura del Proyecto
+
+```text
 proyecto-ml-spotify/
 │
-├── README.md                           # Informe técnico ejecutivo en Markdown 
+├── README.md                           # Informe técnico ejecutivo en Markdown (documento central)
+├── requirements.txt                    # Dependencias congeladas (pandas, scikit-learn, joblib, etc.)
 ├── .gitignore                          # Exclusión de checkpoints de Jupyter, entornos virtuales, etc.
 │
-├── data/                               # Gestión de conjuntos de datos 
+├── data/                               # Gestión de conjuntos de datos
 │   ├── raw/
-│   │   └── Spotify_Tracks_Dataset.csv  # Dataset crudo original (o script de descarga automática)
+│   │   └── Spotify_Tracks_Dataset.csv  # Dataset crudo original
 │   ├── processed/
-│   │   └── spotify_clean.csv           # Dataset sin duplicados
+│   │   └── spotify_clean.csv           # Dataset sin duplicados (89.741 registros)
 │   └── segmentation/                   # Archivos generados en la fase de clustering
 │       ├── X_segmentacion_original.csv
 │       ├── X_segmentacion_escalado.csv
 │       └── contexto_segmentacion.csv
 │
-├── notebooks/                          # Cuadernos ordenados según el flujo de trabajo 
+├── notebooks/                          # Cuadernos ordenados según el flujo de trabajo
 │   ├── 01_eda_limpieza_datos.ipynb     # Auditoría SHA-256, deduplicación, análisis estadístico y boxplots
 │   ├── 02_clustering_kmeans.ipynb      # Estandarización, Elbow, Silhouette, K-Means (K=4) y PCA
 │   ├── 03_modelos_clasificacion.ipynb  # Decision Tree (binario y 3 clases), evaluación y overfitting
@@ -27,7 +31,7 @@ proyecto-ml-spotify/
 │
 ├── reports/                            # Entregables formales y material de apoyo
 │   ├── informe_tecnico_ejecutivo.md    # Copia extendida o modular del informe (CRISP-DM)
-│   └── presentacion_defensa.pdf        # Diapositivas para la defensa
+│   └── presentacion_defensa.pdf        # Diapositivas para la defensa de 10 minutos
 │
 └── images/                             # Gráficos y diagramas exportados para el README
     ├── pie_duplicados.png              # Gráfico de torta de duplicados
@@ -37,3 +41,4 @@ proyecto-ml-spotify/
     ├── heatmap_centroides.png          # Mapa de calor de centroides
     ├── pca_clusters_2d.png             # Proyección 2D de clusters
     └── comparativa_metricas_regresion.png # Gráfico de barras MAE vs R2
+```
