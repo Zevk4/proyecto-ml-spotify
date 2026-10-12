@@ -1,0 +1,3 @@
+Modelo,MAE_Test,R2_Test
+Decision Tree (Optimizado),11.820273966638027,0.30594608855638616
+HistGradientBoosting (Optimizado),11.148299963300772,0.40295077452192984
