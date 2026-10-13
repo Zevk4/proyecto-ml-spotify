@@ -245,6 +245,7 @@ proyecto-ml-spotify/
 │
 └── reports/                                           # Entregables técnicos y defensas
     ├── Informe_Machine_Learning_2.pdf                 # Informe técnico consolidado
+    ├── Informe_Machine_Learning_2.md                 # Informe técnico consolidado en formato .md
     └── presentacion_modelos_spotify.pptx              # Soporte visual para defensa técnica
 
 ```
